@@ -1,0 +1,11 @@
+#cabecalho {
+    background-color: #a5b1c2;
+}
+
+.logotipo h1{
+    text-transform: uppercase;
+}
+
+.logo_span {
+    color: var(--cor2);
+}
