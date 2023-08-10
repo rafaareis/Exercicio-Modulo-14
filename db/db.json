@@ -4,7 +4,7 @@
         "artista": "Blues Pills",
         "nomeDoDisco": "Blues Pills",
         "anoLancamento": "2014",
-        "capaDoDisco": "src/capas de cds/Blues Pills (2014).jpeg",
+        "capaDoDisco": "https://github.com/rafaareis/json-db-modulo-14/blob/main/capasDeCds/Blues%20Pills%20(2014).jpeg?raw=true",
         "price": "R$ 78,79",
         "lancamento": false,
         "categoria": "Disco - Anos 2010",
