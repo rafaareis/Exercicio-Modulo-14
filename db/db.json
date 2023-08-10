@@ -1,9 +1,13 @@
-{
-    "Logo": [
-        {
-            "id": 1,
-            "name": "Music Store - A loja da música",
-            "Logotipo": "<h1>Mus<span>i</span>c Store</h1>"
-        }
-    ]
-}
+[
+    {
+        "id": 1,
+        "artista": "Blues Pills",
+        "nomeDoDisco": "Blues Pills",
+        "anoLancamento": "2014",
+        "capaDoDisco": "src/capas de cds/Blues Pills (2014).jpeg",
+        "price": "R$ 78,79",
+        "lancamento": false,
+        "categoria": "Disco - Anos 2010",
+        "promocao": false
+    }
+]
