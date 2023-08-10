@@ -1,5 +1,7 @@
 :root {
+    --cor1: #000;
     --cor2: #8854d0;
+    --cor3: #a5b1c2
 }
 
 * {
@@ -7,7 +9,7 @@
 }
 
 #cabecalho {
-    background-color: #a5b1c2;
+    background-color: var(--cor3);
 }
 
 

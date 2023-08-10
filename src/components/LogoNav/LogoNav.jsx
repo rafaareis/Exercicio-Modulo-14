@@ -3,7 +3,9 @@ import styles from './LogoNav.module.css'
 
 const LogoNav = () => {
     const dbLogoURL = "https://json-db-modulo-14.vercel.app/Logo"
+    const navUlURL = "https://json-db-modulo-14.vercel.app/navUl"
     const [logo, setLogo] = useState([])
+    const [navUlArr, setNavUlArr] = useState([])
 
     useEffect(() => {
         fetch(dbLogoURL)
@@ -11,6 +13,15 @@ const LogoNav = () => {
         .then(reJson => {
             console.log(reJson)
             setLogo(reJson)
+        })
+    }, [])
+
+    useEffect(() => {
+        fetch(navUlURL)
+        .then(res => res.json())
+        .then(reJson => {
+            console.log(reJson)
+            setNavUlArr(reJson)
         })
     }, [])
 
@@ -27,6 +38,23 @@ const LogoNav = () => {
                         )
                     }))}
                 </div>
+                <button className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                    <span className="navbar-toggler-icon">
+                    </span>
+                </button>
+                <nav className="navbar-collapse collapse justify-content-center" id="menu-navegacao">
+                    <ul className="nav nav-pills d-block d-md-flex">
+                        {navUlArr.map((navUl) => {
+                            return (
+                                <li key={navUl.id} className={`nav-item fw-bold ${styles.navLi}`}>
+                                    <a className={`nav-link ${styles.navLi_a}`} href={`#${navUl.href}`}>
+                                        {navUl.nome}
+                                    </a>
+                                </li>
+                            )
+                        })}
+                    </ul>
+                </nav>
 
             </div>
         </header>
