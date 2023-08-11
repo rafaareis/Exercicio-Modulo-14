@@ -43,7 +43,7 @@ const Carousel = () => {
                                             <div className="col-md-3">
                                                 <div className="card">
                                                     <div className="card-img">
-                                                        <img className={`img-fluid ${styles.capaDoDisco}` } src={albuns.capaDoDisco} alt={`Capa de ${albuns.artista} - ${albuns.nomeDoDisco}`} />
+                                                        <img className={`img-fluid d-block ${styles.capaDoDisco}` } src={albuns.capaDoDisco} alt={`Capa de ${albuns.artista} - ${albuns.nomeDoDisco}`} />
                                                     </div>
                                                 </div>
                                             </div>
@@ -55,7 +55,7 @@ const Carousel = () => {
                                             <div className="col-md-3">
                                                 <div className="card">
                                                     <div className="card-img">
-                                                        <img className={`img-fluid ${styles.capaDoDisco}`} src={albuns.capaDoDisco} alt={`Capa de ${albuns.artista} - ${albuns.nomeDoDisco}`} />
+                                                        <img className={`img-fluid d-block ${styles.capaDoDisco}`} src={albuns.capaDoDisco} alt={`Capa de ${albuns.artista} - ${albuns.nomeDoDisco}`} />
                                                     </div>
                                                 </div>
                                             </div>
