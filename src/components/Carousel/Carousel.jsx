@@ -32,7 +32,7 @@ const Carousel = () => {
 
     return (
         <>
-            <div className="container text-center my-3">
+            <div className="container-fluid text-center my-3">
                 <div className="row mx-auto my-auto justify-content-center">
                     <div id="recipeCarousel" className="carousel slide" data-bs-ride="carousel">
                         <div className="carousel-inner" role="listbox">
