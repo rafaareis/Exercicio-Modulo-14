@@ -39,7 +39,7 @@ const Carousel = () => {
                             {albunsArr.map((albuns) => {
                                 if(albuns.id === 1) {
                                     return (
-                                        <div key={albuns.id} className="carousel-item active" data-bs-interval="4000">
+                                        <div key={albuns.id} className="carousel-item active" data-bs-interval="4000" role="option">
                                             <div className="col-md-3">
                                                 <div className="card">
                                                     <div className="card-img">
@@ -51,7 +51,7 @@ const Carousel = () => {
                                     )
                                 } else {
                                     return (
-                                        <div key={albuns.id} className="carousel-item" data-bs-interval="4000">
+                                        <div key={albuns.id} className="carousel-item" data-bs-interval="4000" role="option">
                                             <div className="col-md-3">
                                                 <div className="card">
                                                     <div className="card-img">
