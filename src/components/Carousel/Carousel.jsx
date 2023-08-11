@@ -42,7 +42,7 @@ const Carousel = () => {
                                 if(albuns.id === 1) {
                                     return (
                                         <div key={albuns.id} className="carousel-item active" data-bs-interval="4000">
-                                            <div className="col-md-4">
+                                            <div className="col-md-3">
                                                 <div className="card">
                                                     <div className="card-img">
                                                         <img className={`img-fluid ${styles.capaDoDisco}` } src={albuns.capaDoDisco} alt={`Capa de ${albuns.artista} - ${albuns.nomeDoDisco}`} />
@@ -54,7 +54,7 @@ const Carousel = () => {
                                 } else {
                                     return (
                                         <div key={albuns.id} className="carousel-item" data-bs-interval="4000">
-                                            <div className="col-md-4">
+                                            <div className="col-md-3">
                                                 <div className="card">
                                                     <div className="card-img">
                                                         <img className={`img-fluid ${styles.capaDoDisco}`} src={albuns.capaDoDisco} alt={`Capa de ${albuns.artista} - ${albuns.nomeDoDisco}`} />
