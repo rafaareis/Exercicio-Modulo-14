@@ -18,7 +18,7 @@ const Carousel = () => {
     let items = document.querySelectorAll('.carousel .carousel-item')
 
     items.forEach((el) => {
-        const minPerSlide = 6
+        const minPerSlide = 4
         let next = el.nextElementSibling
         for (var i=1; i<minPerSlide; i++) {
             if (!next) {
@@ -40,7 +40,7 @@ const Carousel = () => {
                             {albunsArr.map((albuns) => {
                                 if(albuns.id === 1) {
                                     return (
-                                        <div key={albuns.id} className="carousel-item active" data-bs-interval="1000">
+                                        <div key={albuns.id} className="carousel-item active" data-bs-interval="4000">
                                             <div className="col-md-3">
                                                 <div className="card">
                                                     <div className="card-img">
@@ -52,7 +52,7 @@ const Carousel = () => {
                                     )
                                 } else {
                                     return (
-                                        <div key={albuns.id} className="carousel-item" data-bs-interval="1000">
+                                        <div key={albuns.id} className="carousel-item" data-bs-interval="4000">
                                             <div className="col-md-3">
                                                 <div className="card">
                                                     <div className="card-img">
