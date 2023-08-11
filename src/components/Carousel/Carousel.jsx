@@ -1,5 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import { useEffect, useState } from "react"
 import styles from "./Carousel.module.css"
 
@@ -74,8 +72,8 @@ const Carousel = () => {
                         </div>
                     </div>
                 </div>
+                <a href="#" className="btn btn-primary">Botão de Teste</a>
             </div>
-
         </>
     )
 }
