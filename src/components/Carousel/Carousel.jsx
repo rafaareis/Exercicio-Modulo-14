@@ -35,11 +35,11 @@ const Carousel = () => {
             <div className="container text-center my-3">
                 <div className="row mx-auto my-auto justify-content-center">
                     <div id="recipeCarousel" className="carousel slide" data-bs-ride="carousel">
-                        <div className="carousel-inner" role="listbox">
+                        <div className="carousel-inner">
                             {albunsArr.map((albuns) => {
                                 if(albuns.id === 1) {
                                     return (
-                                        <div key={albuns.id} className="carousel-item active" data-bs-interval="4000" role="option">
+                                        <div key={albuns.id} className="carousel-item active" data-bs-interval="4000">
                                             <div className="col-md-3">
                                                 <div className="card">
                                                     <div className="card-img">
@@ -51,7 +51,7 @@ const Carousel = () => {
                                     )
                                 } else {
                                     return (
-                                        <div key={albuns.id} className="carousel-item" data-bs-interval="4000" role="option">
+                                        <div key={albuns.id} className="carousel-item" data-bs-interval="4000">
                                             <div className="col-md-3">
                                                 <div className="card">
                                                     <div className="card-img">
@@ -63,10 +63,10 @@ const Carousel = () => {
                                     )
                                 }
                             })}
-                            <a className="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                            <a className="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" data-bs-slide="prev">
                             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                             </a>
-                            <a className="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                            <a className="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" data-bs-slide="next">
                             <span className="carousel-control-next-icon" aria-hidden="true"></span>
                             </a>
                         </div>
