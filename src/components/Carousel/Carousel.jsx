@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import styles from "./Carousel.module.css"
+import '../../global.css'
 
 const Carousel = () => {
     const dbProductsURL = "https://json-db-modulo-14.vercel.app/products"
@@ -63,10 +64,10 @@ const Carousel = () => {
                                     )
                                 }
                             })}
-                            <a className="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" data-bs-slide="prev">
+                            <a className="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev" aria-hidden="true">
                             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                             </a>
-                            <a className="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" data-bs-slide="next">
+                            <a className="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next" aria-hidden="true">
                             <span className="carousel-control-next-icon" aria-hidden="true"></span>
                             </a>
                         </div>
