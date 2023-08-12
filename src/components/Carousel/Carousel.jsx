@@ -64,12 +64,12 @@ const Carousel = () => {
                                     )
                                 }
                             })}
-                            <a className="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev" aria-hidden="true">
-                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                            </a>
-                            <a className="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next" aria-hidden="true">
-                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                            </a>
+                            <button className="carousel-control-prev" data-bs-target="#recipeCarousel" type="button" data-bs-slide="prev">
+                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </button>
+                            <button className="carousel-control-next" data-bs-target="#recipeCarousel" type="button" data-bs-slide="next">
+                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                            </button>
                         </div>
                     </div>
                 </div>
