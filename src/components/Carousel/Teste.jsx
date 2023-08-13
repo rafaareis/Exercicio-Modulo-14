@@ -38,7 +38,7 @@ const Teste = () => {
     return (
         <>
             <Container>
-                <Carousel>
+                <Carousel className="col-md-12">
                     {albunsArr.map((albuns) => {
                         return (
                             <Carousel.Item key={albuns.id} >
