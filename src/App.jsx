@@ -2,7 +2,7 @@ import LogoNav from './components/LogoNav/LogoNav';
 import Teste from './components/Carousel/Teste'
 // import Carousel from './components/Carousel/Carousel';
 
-import './global.css'
+import './assets/global.css'
 
 function App() {
 

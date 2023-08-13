@@ -41,10 +41,8 @@ const Teste = () => {
                 <Carousel>
                     {albunsArr.map((albuns) => {
                         return (
-                            <Carousel.Item key={albuns.id}>
-                                <Card 
-                                className={`col-md-3`}
-                                >
+                            <Carousel.Item key={albuns.id} >
+                                <Card className={`col-md-3`}>
                                     <Card.Img 
                                         src={albuns.capaDoDisco}
                                         className={`${styles.capaDoDisco}`}
