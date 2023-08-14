@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react"
-import Container from "react-bootstrap/Container"
-import Carousel from "react-bootstrap/Carousel"
-import Card from "react-bootstrap/Card"
-import styles from './Carousel.module.css'
+import Slider from "react-slick"
+import styles from "./Carousel.module.css"
 
 
 
@@ -35,25 +33,28 @@ const Teste = () => {
         }
     })
 
+const settings = {
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: true
+    };
+            
+
+
+
     return (
         <>
-            <Container>
-                <Carousel className="col-md-12">
-                    {albunsArr.map((albuns) => {
-                        return (
-                            <Carousel.Item key={albuns.id} >
-                                <Card className={`col-md-3`}>
-                                    <Card.Img 
-                                        src={albuns.capaDoDisco}
-                                        className={`${styles.capaDoDisco}`}
-                                    />
-                                </Card>
-                            </Carousel.Item>
-                        )
-                    })}
-                </Carousel>
-            </Container>
-
+            <Slider {...settings} className={`container`} id="carousel-imagens">
+                {albunsArr.map((albuns) => {
+                    return (
+                        <div key={albuns.id}>
+                            <img className={styles.capaDoDisco}src={albuns.capaDoDisco} alt={`Foto do disco ${albuns.artista} - ${albuns.nomeDoDisco}`} />
+                        </div>                    
+                    )
+                })}
+            </Slider>
         </>
     )
 }
