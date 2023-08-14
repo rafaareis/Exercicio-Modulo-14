@@ -42,7 +42,7 @@ const LogoNav = () => {
                     <span className="navbar-toggler-icon">
                     </span>
                 </button>
-                <nav className="navbar-collapse collapse justify-content-center" id="menu-navegacao">
+                <nav className="navbar-collapse collapse justify-content-end" id="menu-navegacao">
                     <ul className="nav nav-pills d-block d-md-flex">
                         {navUlArr.map((navUl) => {
                             return (
