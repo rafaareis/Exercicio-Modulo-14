@@ -12,6 +12,33 @@
     background-color: var(--cor3);
 }
 
+
+#cabecalho .container .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-produtos .nav-link.active:hover {
+    color: var(--cor2);
+
+}
+
+#cabecalho .container nav .nav-link.active {
+    background-color: var(--cor2);
+    color: var(--cor1);
+}
+
+.text-colored {
+    color: var(--cor2);
+}
+
+.nav-produtos .nav-link:hover {
+    color:var(--cor2)
+}
+
+.nav-produtos .nav-link.active {
+    background-color: var(--cor2);
+    color: var(--cor1);
+}
+
 @media (max-width: 767px) {
     .carousel-inner .carousel-item > div {
         display: none;

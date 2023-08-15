@@ -1,0 +1,13 @@
+#our_products h2 {
+        margin: 30px;
+        text-align: center;
+        font-size: 45px;
+        text-transform: uppercase;
+        color: var(--cor2)
+}
+
+.capaDoDisco {
+        height: 250px;
+        width: 275px;
+}
+
