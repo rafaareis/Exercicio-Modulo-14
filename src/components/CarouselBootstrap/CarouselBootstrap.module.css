@@ -14,6 +14,10 @@
     font-size: 30px;
 }
 
+#sobre strong {
+    color: var(--cor2)
+}
+
 #sobre h2 {
     margin: 30px;
     text-align: center;
