@@ -22,7 +22,7 @@ const CarouselBootstrap = () => {
     return (
         <>
             <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
-                <section id="sobre-o-retaurante">
+                <section id="sobre-a-loja">
                     <Container>
                         <Carousel>
                             {albunsArr.map((albuns) => {
@@ -30,7 +30,7 @@ const CarouselBootstrap = () => {
                                 <Carousel.Item key={albuns.id}>
                                     <img className={styles.profile} src={albuns.profile} alt={`Foto de ${albuns.artista}`} />
                                 </Carousel.Item>
-                                )
+                                )                                
                             })}
                         </Carousel>
                         <div id={styles.sobre}>
