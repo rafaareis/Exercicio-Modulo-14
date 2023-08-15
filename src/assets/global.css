@@ -46,10 +46,6 @@
 transform: translateX(0);
 }
 
-.carousel-indicators {
-    position: unset;
-}
-
 /* font-family: 'Bruno Ace', cursive;
 font-family: 'DynaPuff', cursive;
 font-family: 'Pacifico', cursive;

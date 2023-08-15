@@ -1,0 +1,23 @@
+.profile {
+    width: 1296px;
+    height: 600px
+}
+
+
+#sobre {
+    max-width: 80%;
+    margin-right: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 30px;
+}
+
+#sobre h2 {
+    margin: 30px;
+    text-align: center;
+    font-size: 45px;
+    text-transform: uppercase;
+    color: var(--cor2)
+}
