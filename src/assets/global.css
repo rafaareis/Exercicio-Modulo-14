@@ -21,7 +21,7 @@
 
 }
 
-#cabecalho .nav .nav-item .nav-link.active {
+#cabecalho .row .nav .nav-item .nav-link.active {
     background-color: var(--cor2);
     color: var(--cor1);
 }
