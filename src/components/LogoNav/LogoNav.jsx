@@ -17,7 +17,7 @@ const LogoNav = () => {
                     <nav className="navbar-collapse collapse justify-content-end" id="menu-navegacao">
                         <ul className="nav nav-pills d-block d-md-flex">
                             <li className={`nav-item fw-bold ${styles.navLi}`}>
-                                <a className="nav-link active"  href="#sobre">
+                                <a className="nav-link"  href="#sobre">
                                     Sobre a Loja                        
                                 </a>
                             </li>
