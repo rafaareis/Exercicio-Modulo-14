@@ -1,3 +1,4 @@
+import { Container } from 'react-bootstrap'
 import styles from './LogoNav.module.css'
 
 const LogoNav = () => {
@@ -5,7 +6,7 @@ const LogoNav = () => {
     return (
         <>
             <header id="cabecalho" className="navbar navbar-expand-lg sticky-top">
-                <div className="container">
+                <Container>
                     <div className={styles.logotipo}>
                         <h1>Mus<span className={styles.logo_span}>!</span>c Store</h1>
                         <h5 className="navbar-brand">A loja do fã de música</h5>
@@ -33,7 +34,7 @@ const LogoNav = () => {
                             </li>
                         </ul>
                     </nav>
-                </div>
+                </Container>
             </header>
         </>
     )
