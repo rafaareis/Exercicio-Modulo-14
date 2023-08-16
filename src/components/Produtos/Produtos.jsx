@@ -14,7 +14,6 @@ const Produtos = () => {
         fetch(dbProductsURL)
         .then(res => res.json())
         .then(reJson => {
-            console.log(reJson)
             setAlbunsArr(reJson)
         })
     }, [])
@@ -41,8 +40,8 @@ const Produtos = () => {
                     <Row>
                         <aside className="col-md-2">
                             <nav className="nav nav-pills flex-column nav-produtos">
-                                <button type="button" data-bs-toggle="tab" data-bs-target="#promocoes" className="fw-bold text-start nav-link text-colored">Promoções</button>
-                                <button type="button" data-bs-toggle="tab" data-bs-target="#lancamentos" className="fw-bold text-start nav-link text-colored">Lançamentos</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#lancamentos" className="fw-bold text-start nav-link text-colored active">Lançamentos</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#promocoes" className="fw-bold text-start nav-link text-colored">Promoções</button>                                
                                 <button type="button" data-bs-toggle="tab" data-bs-target="#ano1990" className="fw-bold text-start nav-link text-colored">Anos - 1990</button>
                                 <button type="button" data-bs-toggle="tab" data-bs-target="#ano2000" className="fw-bold text-start nav-link text-colored">Anos - 2000</button>
                                 <button type="button" data-bs-toggle="tab" data-bs-target="#ano2010" className="fw-bold text-start nav-link text-colored">Anos - 2010</button>
@@ -56,11 +55,34 @@ const Produtos = () => {
                                         {albunsArr.map((albuns) => {
                                             if(albuns.lancamento) {
                                                 return (
-                                                    <div key={albuns.id} >
-                                                        <img className={styles.capaDoDisco} src={albuns.capaDoDisco} alt={`Foto do disco ${albuns.artista} - ${albuns.nomeDoDisco}`} />
+                                                    <div key={albuns.id} className={styles.div_produto} >
+                                                        <img className={styles.capaDoDisco2} src={albuns.capaDoDisco} alt={`Foto do disco ${albuns.artista} - ${albuns.nomeDoDisco}`} />
                                                         <h3>{albuns.nomeDoDisco}({albuns.anoLancamento})</h3>
                                                         <h4>{albuns.artista}</h4>
                                                         <div className="price">
+                                                            <strong>{albuns.price}</strong>
+                                                        </div>
+                                                        <button type="button">Tenho interesse</button>
+                                                    </div>                    
+                                                )
+                                            }
+                                        })}
+                                    </Slider>
+                                </div>
+                                <div className="tab-pane" id="promocoes">
+                                    <Slider {...settings} id={`promo-carousel`} className={`container`}>
+                                        {albunsArr.map((albuns) => {
+                                            if(albuns.promocao) {
+                                                return (
+                                                    <div key={albuns.id} className={styles.div_produto} >
+                                                        <img className={styles.capaDoDisco2} src={albuns.capaDoDisco} alt={`Foto do disco ${albuns.artista} - ${albuns.nomeDoDisco}`} />
+                                                        <h3>{albuns.nomeDoDisco}({albuns.anoLancamento})</h3>
+                                                        <h4>{albuns.artista}</h4>
+                                                        <div className="price">
+                                                            <div className="promoDiv">
+                                                                <del>{albuns.originalPrice}</del>
+                                                                <p>{albuns.percent}%OFF</p>
+                                                            </div>
                                                             <strong>{albuns.price}</strong>
                                                         </div>
                                                         <button type="button">Tenho interesse</button>

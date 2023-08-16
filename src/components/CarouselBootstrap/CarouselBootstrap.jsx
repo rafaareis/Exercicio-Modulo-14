@@ -14,7 +14,6 @@ const CarouselBootstrap = () => {
         fetch(dbProductsURL)
         .then(res => res.json())
         .then(reJson => {
-            console.log(reJson)
             setAlbunsArr(reJson)
         })
     }, [])

@@ -6,8 +6,16 @@
         color: var(--cor2)
 }
 
-.capaDoDisco {
-        height: 250px;
-        width: 275px;
+.capaDoDisco2 {
+        height: 235px;
+        width: 260px;
+}
+
+.div_produto h3 {
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--cor2);
+        font-size: 22px;
+        font-weight: bolder;
 }
 

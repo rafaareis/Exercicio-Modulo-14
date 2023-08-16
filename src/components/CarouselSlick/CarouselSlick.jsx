@@ -12,7 +12,6 @@ const CarouselSlick = () => {
         fetch(dbProductsURL)
         .then(res => res.json())
         .then(reJson => {
-            console.log(reJson)
             setAlbunsArr(reJson)
         })
     }, [])
@@ -31,15 +30,18 @@ const settings = {
 
     return (
         <>
-            <Slider {...settings} className={`container`} id="carousel-imagens">
-                {albunsArr.map((albuns) => {
-                    return (
-                        <div key={albuns.id}>
-                            <img className={styles.capaDoDisco}src={albuns.capaDoDisco} alt={`Foto do disco ${albuns.artista} - ${albuns.nomeDoDisco}`} />
-                        </div>                    
-                    )
-                })}
-            </Slider>
+            <div id="produtos">
+                <Slider {...settings} className={`container`} id="carousel-imagens">
+                    {albunsArr.map((albuns) => {
+                        return (
+                            <div key={albuns.id}>
+                                <img className={styles.capaDoDisco}src={albuns.capaDoDisco} alt={`Foto do disco ${albuns.artista} - ${albuns.nomeDoDisco}`} />
+                            </div>                    
+                        )
+                    })}
+                </Slider>
+            </div>
+
         </>
     )
 }

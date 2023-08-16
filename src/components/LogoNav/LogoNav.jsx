@@ -17,17 +17,17 @@ const LogoNav = () => {
                     <nav className="navbar-collapse collapse justify-content-end" id="menu-navegacao">
                         <ul className="nav nav-pills d-block d-md-flex">
                             <li className={`nav-item fw-bold ${styles.navLi}`}>
-                                <a className={`nav-link`} href="#sobre">
+                                <a className="nav-link"  href="#sobre">
                                     Sobre a Loja                        
                                 </a>
                             </li>
                             <li className={`nav-item fw-bold ${styles.navLi}`}>
-                                <a className={`nav-link`} href="#produtos">
+                                <a className="nav-link" href="#produtos">
                                     Produtos
                                 </a>
                             </li>
                             <li className={`nav-item fw-bold ${styles.navLi}`}>
-                                <a className={`nav-link`} href="#contatos">
+                                <a className="nav-link" href="#contatos">
                                     Contato
                                 </a>
                             </li>
