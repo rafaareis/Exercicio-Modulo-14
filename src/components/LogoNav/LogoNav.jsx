@@ -1,4 +1,4 @@
-import { Container } from 'react-bootstrap'
+import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import styles from './LogoNav.module.css'
 
@@ -19,7 +19,7 @@ const LogoNav = () => {
                     <Nav className="navbar-collapse collapse justify-content-end" id="menu-navegacao">
                         <ul className="nav nav-pills d-block d-md-flex">
                             <li className={`nav-item fw-bold ${styles.navLi}`}>
-                                <a className="nav-link"  href="#sobre">
+                                <a className="nav-link active"  href="#sobre">
                                     Sobre a Loja                        
                                 </a>
                             </li>
