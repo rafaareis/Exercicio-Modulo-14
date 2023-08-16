@@ -19,17 +19,17 @@ const LogoNav = () => {
                     <Nav className="navbar-collapse collapse justify-content-end" id="menu-navegacao">
                         <ul className="nav nav-pills d-block d-md-flex">
                             <li className={`nav-item fw-bold ${styles.navLi}`}>
-                                <a className="nav-link active"  href="#sobre">
+                                <a className="nav-link active" data-bs-toggle="tab" href="#sobre">
                                     Sobre a Loja                        
                                 </a>
                             </li>
                             <li className={`nav-item fw-bold ${styles.navLi}`}>
-                                <a className="nav-link" href="#produtos">
+                                <a className="nav-link" data-bs-toggle="tab" href="#produtos">
                                     Produtos
                                 </a>
                             </li>
                             <li className={`nav-item fw-bold ${styles.navLi}`}>
-                                <a className="nav-link" href="#contatos">
+                                <a className="nav-link" data-bs-toggle="tab" href="#contatos">
                                     Contato
                                 </a>
                             </li>
