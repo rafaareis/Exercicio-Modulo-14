@@ -18,18 +18,18 @@ const LogoNav = () => {
                     </button>
                     <Nav className="navbar-collapse collapse justify-content-end" id="menu-navegacao">
                         <ul className="nav nav-pills d-block d-md-flex">
-                            <li className={`nav-item fw-bold`} id={styles.navLi}>
-                                <a className="nav-link" data-bs-toggle="tab" href="#sobre">
+                            <li className="nav-item fw-bold" id={styles.navLi}>
+                                <a className="nav-link"  href="#sobre">
                                     Sobre a Loja                        
                                 </a>
                             </li>
-                            <li className={`nav-item fw-bold`} id={styles.navLi}>
-                                <a className="nav-link" data-bs-toggle="tab" href="#produtos">
+                            <li className="nav-item fw-bold" id={styles.navLi}>
+                                <a className="nav-link"  href="#produtos">
                                     Produtos
                                 </a>
                             </li>
-                            <li className={`nav-item fw-bold`} id={styles.navLi}>
-                                <a className="nav-link" data-bs-toggle="tab" href="#contatos">
+                            <li className="nav-item fw-bold" id={styles.navLi}>
+                                <a className="nav-link"  href="#contatos">
                                     Contato
                                 </a>
                             </li>
