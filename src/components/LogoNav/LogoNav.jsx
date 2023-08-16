@@ -1,4 +1,5 @@
 import { Container } from 'react-bootstrap'
+import Nav from 'react-bootstrap/Nav'
 import styles from './LogoNav.module.css'
 
 const LogoNav = () => {
@@ -15,7 +16,7 @@ const LogoNav = () => {
                         <span className="navbar-toggler-icon">
                         </span>
                     </button>
-                    <nav className="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                    <Nav className="navbar-collapse collapse justify-content-end" id="menu-navegacao">
                         <ul className="nav nav-pills d-block d-md-flex">
                             <li className={`nav-item fw-bold ${styles.navLi}`}>
                                 <a className="nav-link"  href="#sobre">
@@ -33,7 +34,9 @@ const LogoNav = () => {
                                 </a>
                             </li>
                         </ul>
-                    </nav>
+                    </Nav>
+                    
+
                 </Container>
             </header>
         </>
