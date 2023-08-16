@@ -30,7 +30,7 @@ const settings = {
 
     return (
         <>
-            <div id="produtos">
+            <div id="produtos_slick">
                 <Slider {...settings} className={`container`} id="carousel-imagens">
                     {albunsArr.map((albuns) => {
                         return (
