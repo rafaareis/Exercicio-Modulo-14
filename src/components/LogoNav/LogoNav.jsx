@@ -35,8 +35,6 @@ const LogoNav = () => {
                             </li>
                         </ul>
                     </Nav>
-                    
-
                 </Container>
             </header>
         </>
