@@ -9,10 +9,12 @@ import './assets/global.css'
 function App() {
 
   return (
-    <>  
-      <LogoNav />
+    <>
+      <header id="cabecalho" className="navbar navbar-expand-lg sticky-top">
+        <LogoNav />
+      </header>
       <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
-        <CarouselBootstrap/>
+        <CarouselBootstrap />
         <CarouselSlick />
         <Produtos />
       </div>
