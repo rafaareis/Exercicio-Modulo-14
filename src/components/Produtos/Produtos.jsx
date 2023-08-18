@@ -26,6 +26,14 @@ const Produtos = () => {
         infinite: true
     };
 
+    const settings1 = {
+        autoplay: false,
+        autoplaySpeed: 2000,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: false
+    };
+
     return (
         <>
             <section id="produtos" className="pt-5 pb-5">
@@ -42,10 +50,7 @@ const Produtos = () => {
                             <nav className="nav nav-pills flex-column nav-produtos">
                                 <button type="button" data-bs-toggle="tab" data-bs-target="#lancamentos" className="fw-bold text-start nav-link text-colored active">Lançamentos</button>
                                 <button type="button" data-bs-toggle="tab" data-bs-target="#promocoes" className="fw-bold text-start nav-link text-colored">Promoções</button>                                
-                                <button type="button" data-bs-toggle="tab" data-bs-target="#ano1990" className="fw-bold text-start nav-link text-colored">Anos - 1990</button>
-                                <button type="button" data-bs-toggle="tab" data-bs-target="#ano2000" className="fw-bold text-start nav-link text-colored">Anos - 2000</button>
-                                <button type="button" data-bs-toggle="tab" data-bs-target="#ano2010" className="fw-bold text-start nav-link text-colored">Anos - 2010</button>
-                                <button type="button" data-bs-toggle="tab" data-bs-target="#ano2020" className="fw-bold text-start nav-link text-colored">Anos - 2020</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#outros" className="fw-bold text-start nav-link text-colored">Outros</button>
                             </nav>
                         </aside>
                         <div className="col-md-10">
@@ -83,6 +88,25 @@ const Produtos = () => {
                                                                 <del>{albuns.originalPrice}</del>
                                                                 <p>{albuns.percent}%OFF</p>
                                                             </div>
+                                                            <strong>{albuns.price}</strong>
+                                                        </div>
+                                                        <button type="button">Tenho interesse</button>
+                                                    </div>                    
+                                                )
+                                            }
+                                        })}
+                                    </Slider>
+                                </div>
+                                <div className="tab-pane" id="outros">
+                                    <Slider {...settings1} id={`promo-outros`} className={`container`}>
+                                        {albunsArr.map((albuns) => {
+                                            if(!albuns.promocao && !albuns.lancamento && albuns.categoria !== "camiseta" ) {
+                                                return (
+                                                    <div key={albuns.id} className={styles.div_produto} >
+                                                        <img className={styles.capaDoDisco2} src={albuns.capaDoDisco} alt={`Foto do disco ${albuns.artista} - ${albuns.nomeDoDisco}`} />
+                                                        <h3>{albuns.nomeDoDisco}({albuns.anoLancamento})</h3>
+                                                        <h4>{albuns.artista}</h4>
+                                                        <div className="price">
                                                             <strong>{albuns.price}</strong>
                                                         </div>
                                                         <button type="button">Tenho interesse</button>

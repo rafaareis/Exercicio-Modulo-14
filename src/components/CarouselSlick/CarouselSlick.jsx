@@ -33,11 +33,18 @@ const settings = {
             <section id="produtos_slick">
                 <Slider {...settings} className={`container`} id="carousel-imagens">
                     {albunsArr.map((albuns) => {
+                        if(albuns.categoria === "camiseta") {
+                            return (
+                            <div key={albuns.id}>
+                                <img className={styles.capaDoDisco} src={albuns.camisetaImg} alt={`Foto do disco ${albuns.artista} - ${albuns.nomeDaCamiseta}`} />
+                            </div>
+                            )
+                        } else {
                         return (
                             <div key={albuns.id}>
                                 <img className={styles.capaDoDisco}src={albuns.capaDoDisco} alt={`Foto do disco ${albuns.artista} - ${albuns.nomeDoDisco}`} />
                             </div>                    
-                        )
+                        )}
                     })}
                 </Slider>
             </section>

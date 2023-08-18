@@ -39,6 +39,10 @@
     color: var(--cor1);
 }
 
+#outros .slick-track {
+    margin-left: 0;
+}
+
 /* font-family: 'Bruno Ace', cursive;
 font-family: 'DynaPuff', cursive;
 font-family: 'Pacifico', cursive;
