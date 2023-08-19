@@ -51,6 +51,7 @@ const Produtos = () => {
                                 <button type="button" data-bs-toggle="tab" data-bs-target="#lancamentos" className="fw-bold text-start nav-link text-colored active">Lançamentos</button>
                                 <button type="button" data-bs-toggle="tab" data-bs-target="#promocoes" className="fw-bold text-start nav-link text-colored">Promoções</button>                                
                                 <button type="button" data-bs-toggle="tab" data-bs-target="#outros" className="fw-bold text-start nav-link text-colored">Outros</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#camiseta" className="fw-bold text-start nav-link text-colored">Camiseta</button>
                             </nav>
                         </aside>
                         <div className="col-md-10">
@@ -105,6 +106,25 @@ const Produtos = () => {
                                                     <div key={albuns.id} className={styles.div_produto} >
                                                         <img className={styles.capaDoDisco2} src={albuns.capaDoDisco} alt={`Foto do disco ${albuns.artista} - ${albuns.nomeDoDisco}`} />
                                                         <h3>{albuns.nomeDoDisco}({albuns.anoLancamento})</h3>
+                                                        <h4>{albuns.artista}</h4>
+                                                        <div className="price">
+                                                            <strong>{albuns.price}</strong>
+                                                        </div>
+                                                        <button type="button">Tenho interesse</button>
+                                                    </div>                    
+                                                )
+                                            }
+                                        })}
+                                    </Slider>
+                                </div>
+                                <div className="tab-pane" id="camiseta">
+                                    <Slider {...settings} id={`promo-camiseta`} className={`container`}>
+                                        {albunsArr.map((albuns) => {
+                                            if(albuns.categoria === "camiseta" ) {
+                                                return (
+                                                    <div key={albuns.id} className={styles.div_produto} >
+                                                        <img className={styles.capaDoDisco} src={albuns.camisetaImg} alt={`Foto do disco ${albuns.artista} - ${albuns.nomeDaCamiseta}`} />
+                                                        <h3>{albuns.nomeDaCamiseta}</h3>
                                                         <h4>{albuns.artista}</h4>
                                                         <div className="price">
                                                             <strong>{albuns.price}</strong>

@@ -24,11 +24,14 @@ const CarouselBootstrap = () => {
                 <Container>
                     <Carousel data-bs-ride="carousel" id="carousel">
                         {albunsArr.map((albuns) => {
-                            return (
-                            <Carousel.Item key={albuns.id}>
-                                <img className={styles.profile} src={albuns.profile} alt={`Foto de ${albuns.artista}`} />
-                            </Carousel.Item>
-                            )                                
+                            if(albuns.categoria !== "camiseta") {
+                                return (
+                                    <Carousel.Item key={albuns.id}>
+                                        <img className={styles.profile} src={albuns.profile} alt={`Foto de ${albuns.artista}`} />
+                                    </Carousel.Item>
+                                    ) 
+                            }
+                               
                         })}
                     </Carousel>
                     <div id={styles.sobre}>
