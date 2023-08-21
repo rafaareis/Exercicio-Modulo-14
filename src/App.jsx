@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import $ from "jquery"
 import LogoNav from './components/LogoNav/LogoNav';
 import CarouselBootstrap from './components/CarouselBootstrap/CarouselBootstrap'
 import CarouselSlick from './components/CarouselSlick/CarouselSlick'
@@ -8,6 +10,11 @@ import './assets/global.css'
 
 function App() {
 
+  useEffect(() => {
+      $('.test-btn').css('color','yellow')
+  })
+
+
   return (
     <>
       <header id="cabecalho" className="navbar navbar-expand-lg sticky-top">
@@ -17,6 +24,7 @@ function App() {
         <CarouselBootstrap />
         <CarouselSlick />
         <Produtos />
+        <button className='test-btn'>Clique Aqui - Teste</button>
       </div>
     </>
   )

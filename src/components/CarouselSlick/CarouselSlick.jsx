@@ -40,11 +40,11 @@ const settings = {
                             </div>
                             )
                         } else {
-                        return (
-                            <div key={albuns.id}>
-                                <img className={styles.capaDoDisco}src={albuns.capaDoDisco} alt={`Foto do disco ${albuns.artista} - ${albuns.nomeDoDisco}`} />
-                            </div>                    
-                        )}
+                            return (
+                                <div key={albuns.id}>
+                                    <img className={styles.capaDoDisco}src={albuns.capaDoDisco} alt={`Foto do disco ${albuns.artista} - ${albuns.nomeDoDisco}`} />
+                                </div>                    
+                            )}
                     })}
                 </Slider>
             </section>
