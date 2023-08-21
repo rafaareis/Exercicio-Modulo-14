@@ -27,12 +27,12 @@ const LogoNav = () => {
                                 </a>
                             </li>
                             <li className="nav-item fw-bold" id={styles.navLi}>
-                                <a className="nav-link" href="#produtos">
+                                <a className="nav-link" href="#produtos_slick">
                                     Slick
                                 </a>
                             </li>
                             <li className="nav-item fw-bold" id={styles.navLi}>
-                                <a className="nav-link" href="#produtos_slick">
+                                <a className="nav-link" href="#produtos">
                                     Produtos
                                 </a>
                             </li>
