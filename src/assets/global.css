@@ -21,7 +21,7 @@
 
 }
 
-#cabecalho .container .row nav .nav .nav-link.active {
+#cabecalho .container .row .nav .nav-link.active {
     background-color: var(--cor2);
     color: var(--cor1);
 }
@@ -41,6 +41,10 @@
 
 #outros .slick-track {
     margin-left: 0;
+}
+
+.test-btn.clicou {
+    color:orange;
 }
 
 /* font-family: 'Bruno Ace', cursive;

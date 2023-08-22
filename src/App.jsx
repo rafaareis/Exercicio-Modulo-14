@@ -11,7 +11,15 @@ import './assets/global.css'
 function App() {
 
   useEffect(() => {
-      $('.test-btn').css('color','yellow')
+
+      $('.test-btn').on('click', function() {
+        $('.test-btn').toggle()
+        if($('.test-btn').hasClass('clicou')) {
+          $('.test-btn').removeClass('clicou')
+        } else {
+          $('.test-btn').addClass('clicou')
+        }
+      })     
   })
 
 
