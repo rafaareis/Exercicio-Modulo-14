@@ -2,8 +2,9 @@
     background-color: var(--cor3);
 }
 
-.logotipo h1{
+.logotipo{
     text-transform: uppercase;
+    color: var(--cor1);
 }
 
 .logo_span {

@@ -5,12 +5,11 @@ const LogoNav = () => {
         <>
             <div className="container">
                 <div className="row">
-                    <div className={styles.logotipo}>
-                        <h1>Mus<span className={styles.logo_span}>!</span>c Store</h1>
-                        <h5 className="navbar-brand">A loja do fã de música</h5>
+                    <div className={`navbar-brand`}>
+                        <h1 className={`${styles.logotipo}`}>Mus<span className={`${styles.logo_span}`}>!</span>c Store</h1>
+                        <h5>A loja do fã de música</h5>
                     </div>
                     <button
-                        type="button"
                         className="navbar-toggler"
                         data-bs-toggle="collapse" 
                         data-bs-target="#menu-navegacao"
@@ -23,22 +22,22 @@ const LogoNav = () => {
                     <nav className="collapse navbar-collapse  justify-content-end" id="menu-navegacao">
                         <ul className="nav nav-pills d-block d-md-flex">
                             <li className="nav-item fw-bold">
-                                <a className="nav-link" href="#sobre">
+                                <a className="nav-link" href="#sobre" >
                                     Sobre a Loja                        
                                 </a>
                             </li>
                             <li className="nav-item fw-bold">
-                                <a className="nav-link" href="#produtos_slick">
+                                <a className="nav-link" href="#produtos_slick" >
                                     Slick
                                 </a>
                             </li>
                             <li className="nav-item fw-bold">
-                                <a className="nav-link" href="#produtos">
+                                <a className="nav-link" href="#produtos" >
                                     Produtos
                                 </a>
                             </li>
                             <li className="nav-item fw-bold">
-                                <a className="nav-link" href="#contatos">
+                                <a className="nav-link" href="#contatos" >
                                     Contato
                                 </a>
                             </li>
