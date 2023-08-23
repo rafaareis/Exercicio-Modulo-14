@@ -22,7 +22,7 @@ const LogoNav = () => {
                     <nav className="collapse navbar-collapse  justify-content-end" id="menu-navegacao">
                         <ul className="nav nav-pills d-block d-md-flex">
                             <li className="nav-item fw-bold">
-                                <a className="nav-link" href="#sobre" >
+                                <a className="nav-link active" href="#sobre" >
                                     Sobre a Loja                        
                                 </a>
                             </li>

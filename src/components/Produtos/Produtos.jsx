@@ -65,10 +65,10 @@ const Produtos = () => {
                                                         <img className={styles.capaDoDisco2} src={albuns.capaDoDisco} alt={`Foto do disco ${albuns.artista} - ${albuns.nomeDoDisco}`} />
                                                         <h3>{albuns.nomeDoDisco}({albuns.anoLancamento})</h3>
                                                         <h4>{albuns.artista}</h4>
-                                                        <div className="price">
-                                                            <strong>{albuns.price}</strong>
+                                                        <div className={styles.price}>
+                                                            <strong className={`${styles.originalPrice}`}>{albuns.price}</strong>
                                                         </div>
-                                                        <button type="button">Tenho interesse</button>
+                                                        <button type="button" className={`${styles.btn_products}`}>Tenho interesse</button>
                                                     </div>                    
                                                 )
                                             }
@@ -84,14 +84,14 @@ const Produtos = () => {
                                                         <img className={styles.capaDoDisco2} src={albuns.capaDoDisco} alt={`Foto do disco ${albuns.artista} - ${albuns.nomeDoDisco}`} />
                                                         <h3>{albuns.nomeDoDisco}({albuns.anoLancamento})</h3>
                                                         <h4>{albuns.artista}</h4>
-                                                        <div className="price">
+                                                        <div className={styles.price}>
                                                             <div className="promoDiv">
                                                                 <del>{albuns.originalPrice}</del>
                                                                 <p>{albuns.percent}%OFF</p>
                                                             </div>
-                                                            <strong>{albuns.price}</strong>
+                                                            <strong className={`${styles.originalPrice}`}>{albuns.price}</strong>
                                                         </div>
-                                                        <button type="button">Tenho interesse</button>
+                                                        <button type="button" className={`${styles.btn_products}`}>Tenho interesse</button>
                                                     </div>                    
                                                 )
                                             }
@@ -107,10 +107,10 @@ const Produtos = () => {
                                                         <img className={styles.capaDoDisco2} src={albuns.capaDoDisco} alt={`Foto do disco ${albuns.artista} - ${albuns.nomeDoDisco}`} />
                                                         <h3>{albuns.nomeDoDisco}({albuns.anoLancamento})</h3>
                                                         <h4>{albuns.artista}</h4>
-                                                        <div className="price">
-                                                            <strong>{albuns.price}</strong>
+                                                        <div className={styles.price}>
+                                                            <strong className={`${styles.originalPrice}`}>{albuns.price}</strong>
                                                         </div>
-                                                        <button type="button">Tenho interesse</button>
+                                                        <button type="button" className={`${styles.btn_products}`}>Tenho interesse</button>
                                                     </div>                    
                                                 )
                                             }
@@ -126,10 +126,10 @@ const Produtos = () => {
                                                         <img className={styles.capaDoDisco} src={albuns.camisetaImg} alt={`Foto do disco ${albuns.artista} - ${albuns.nomeDaCamiseta}`} />
                                                         <h3>{albuns.nomeDaCamiseta}</h3>
                                                         <h4>{albuns.artista}</h4>
-                                                        <div className="price">
-                                                            <strong>{albuns.price}</strong>
+                                                        <div className={styles.price}>
+                                                            <strong className={`${styles.originalPrice}`}>{albuns.price}</strong>
                                                         </div>
-                                                        <button type="button">Tenho interesse</button>
+                                                        <button type="button" className={`${styles.btn_products}`}>Tenho interesse</button>
                                                     </div>                    
                                                 )
                                             }

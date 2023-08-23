@@ -6,11 +6,7 @@
         color: var(--cor2)
 }
 
-.capaDoDisco {
-        height: 235px;
-        width: 260px;
-}
-
+.capaDoDisco,
 .capaDoDisco2 {
         height: 235px;
         width: 260px;
@@ -22,5 +18,31 @@
         color: var(--cor2);
         font-size: 22px;
         font-weight: bolder;
+        height: 50px;
+}
+
+.div_produto h4 {
+        height: 50px;
+        text-align: center;
+}
+
+.div_produto .price {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--cor2);
+}
+
+.originalPrice {
+        font-size: 40px;
+}
+
+.btn_products {
+        width: 100%;
+        background-color: var(--cor2);
+}
+
+.btn_products:hover {
+        background-color: var(--cor5);
 }
 

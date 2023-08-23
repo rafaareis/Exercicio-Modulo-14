@@ -1,14 +1,18 @@
 :root {
     --cor1: #000;
     --cor2: #8854d0;
-    --cor3: #a5b1c2
+    --cor3: #a5b1c2;
+    --cor4: #d1d8e0;
+    --cor5: #119759;
+    --cor6: #fff;
+
 }
 
 * {
     font-family: 'DynaPuff', cursive;
 }
 
-#cabecalho {
+.navbar {
     background-color: var(--cor3);
 }
 
