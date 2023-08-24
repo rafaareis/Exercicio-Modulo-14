@@ -85,7 +85,7 @@ const Produtos = () => {
                                                         <h3>{albuns.nomeDoDisco}({albuns.anoLancamento})</h3>
                                                         <h4>{albuns.artista}</h4>
                                                         <div className={styles.price}>
-                                                            <div className="promoDiv">
+                                                            <div className={`${styles.priceDiv}`}>
                                                                 <del>{albuns.originalPrice}</del>
                                                                 <p>{albuns.percent}%OFF</p>
                                                             </div>
