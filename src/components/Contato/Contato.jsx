@@ -1,6 +1,26 @@
+import { useState } from 'react'
 import styles from './Contato.module.css'
 
 const Contato = () => {
+    
+    
+
+    const [cepAddress, setCepAddress] = useState({});
+
+    const checkCEP = (e) => {
+        const cep = e.target.value;
+        console.log(cep)
+        const cepURL = `https://viacep.com.br/ws/${cep}/json/`
+        fetch(cepURL)
+        .then(res => res.json())
+        .then(reJson => {
+            console.log(reJson)
+            setCepAddress(reJson)
+            console.log(reJson.logradouro);
+
+        })
+
+    }
 
     return (
         <>
@@ -14,7 +34,7 @@ const Contato = () => {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-md-7 mb-5">
+                        <div className="col-md-5 mb-5">
                             <form>
                                 <div className="mb-3">
                                     <label htmlFor="nome" className="form-label fw-bold">Nome Completo:</label>
@@ -34,15 +54,31 @@ const Contato = () => {
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="cep" className="form-label fw-bold">CEP:</label>
-                                    <input type="tel" id="cep" className="form-control" />
+                                    <input type="tel" id="cep" className="form-control" onBlur={checkCEP} />
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="endereco" className="form-label fw-bold">Endereço:</label>
-                                    <input type="tel" id="endereco" className="form-control" />
+                                    <input type="text" id="endereco" className="form-control" value={cepAddress.logradouro} />
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="enderecoNum" className="form-label fw-bold">Número do Logradouro:</label>
                                     <input type="tel" id="enderecoNum" className="form-control" />
+                                </div>
+                                <div className="mb-3">
+                                    <label htmlFor="bairro" className="form-label fw-bold">Bairro:</label>
+                                    <input type="text" id="bairro" className="form-control" value={cepAddress.bairro} />
+                                </div>
+                                <div className="mb-3">
+                                    <label htmlFor="complemento" className="form-label fw-bold">Complemento:</label>
+                                    <input type="text" id="complemento" className="form-control" value={cepAddress.complemento} />
+                                </div>
+                                <div className="mb-3">
+                                    <label htmlFor="cidade" className="form-label fw-bold">Cidade:</label>
+                                    <input type="text" id="cidade" className="form-control" value={cepAddress.localidade} />
+                                </div>
+                                <div className="mb-3">
+                                    <label htmlFor="estado" className="form-label fw-bold">Estado:</label>
+                                    <input type="text" id="estado" className="form-control" value={cepAddress.uf} />
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="item" className="form-label fw-bold">Item de interesse:</label>
