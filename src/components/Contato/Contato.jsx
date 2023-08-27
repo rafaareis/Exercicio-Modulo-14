@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import $ from "jquery"
 import styles from './Contato.module.css'
 
 const Contato = () => {
@@ -7,6 +8,19 @@ const Contato = () => {
 
     const [cepAddress, setCepAddress] = useState({});
 
+
+    useEffect(() => {
+        $('#celular').mask('+00(00)00000-0000', {
+            placeholder:'+__(__)_____-____'
+        }),
+        $('#cpf').mask('000.000.000-00', {
+            placeholder: '___.___.___-__'
+        }),
+        $('#cep').mask('00000-000', {
+            placeholder:'_____-___'
+        })
+    })
+
     const checkCEP = (e) => {
         const cep = e.target.value;
         console.log(cep)
@@ -14,9 +28,7 @@ const Contato = () => {
         fetch(cepURL)
         .then(res => res.json())
         .then(reJson => {
-            console.log(reJson)
             setCepAddress(reJson)
-            console.log(reJson.logradouro);
 
         })
 
@@ -45,8 +57,8 @@ const Contato = () => {
                                     <input type="email" id="email" className="form-control" required />
                                 </div>
                                 <div className="mb-3">
-                                    <label htmlFor="telefone" className="form-label fw-bold">Celular:</label>
-                                    <input type="tel" id="telefone" className="form-control" required />
+                                    <label htmlFor="celular" className="form-label fw-bold">Celular:</label>
+                                    <input type="tel" id="celular" className="form-control" required />
                                 </div>
                                 <div className="mb-3">
                                     <label htmlFor="cpf" className="form-label fw-bold">CPF:</label>
